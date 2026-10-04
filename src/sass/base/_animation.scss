@@ -1,0 +1,52 @@
+@keyframes animloader {
+    0% {
+    background: var(--light-color);
+    box-shadow: 9px -19px 0 -1px var(--dark-color), 28px -19px 0 -2px var(--dark-color), 39px -5px 0 -3px var(--dark-color), 34px 10px 0 -4px var(--dark-color), 22px 17px 0 -5px var(--dark-color), 9px 16px 0 -6px var(--dark-color);
+    }
+    14% {
+    background: var(--dark-color);
+    box-shadow: 9px -19px 0 -1px var(--light-color), 28px -19px 0 -2px var(--dark-color), 39px -5px 0 -3px var(--dark-color), 34px 10px 0 -4px var(--dark-color), 22px 17px 0 -5px var(--dark-color), 9px 16px 0 -6px var(--dark-color);
+    }
+    28% {
+    background: var(--dark-color);
+    box-shadow: 9px -19px 0 -1px var(--dark-color), 28px -19px 0 -2px var(--light-color), 39px -5px 0 -3px var(--dark-color), 34px 10px 0 -4px var(--dark-color), 22px 17px 0 -5px var(--dark-color), 9px 16px 0 -6px var(--dark-color);
+    }
+    42% {
+    background: var(--dark-color);
+    box-shadow: 9px -19px 0 -1px var(--dark-color), 28px -19px 0 -2px var(--dark-color), 39px -5px 0 -3px var(--light-color), 34px 10px 0 -4px var(--dark-color), 22px 17px 0 -5px var(--dark-color), 9px 16px 0 -6px var(--dark-color);
+    }
+    57% {
+    background: var(--dark-color);
+    box-shadow: 9px -19px 0 -1px var(--dark-color), 28px -19px 0 -2px var(--dark-color), 39px -5px 0 -3px var(--dark-color), 34px 10px 0 -4px var(--light-color), 22px 17px 0 -5px var(--dark-color), 9px 16px 0 -6px var(--dark-color);
+    }
+    71% {
+    background: var(--dark-color);
+    box-shadow: 9px -19px 0 -1px var(--dark-color), 28px -19px 0 -2px var(--dark-color), 39px -5px 0 -3px var(--dark-color), 34px 10px 0 -4px var(--dark-color), 22px 17px 0 -5px var(--light-color), 9px 16px 0 -6px var(--dark-color);
+    }
+    85% {
+    background: var(--dark-color);
+    box-shadow: 9px -19px 0 -1px var(--dark-color), 28px -19px 0 -2px var(--dark-color), 39px -5px 0 -3px var(--dark-color), 34px 10px 0 -4px var(--dark-color), 22px 17px 0 -5px var(--dark-color), 9px 16px 0 -6px var(--light-color);
+    }
+    100% {
+    background: var(--main-color);
+    box-shadow: 9px -19px 0 -1px var(--dark-color), 28px -19px 0 -2px var(--dark-color), 39px -5px 0 -3px var(--dark-color), 34px 10px 0 -4px var(--dark-color), 22px 17px 0 -5px var(--dark-color), 9px 16px 0 -6px var(--dark-color);
+    }
+}
+
+@keyframes carriage {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

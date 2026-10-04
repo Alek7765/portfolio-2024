@@ -1,0 +1,61 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+
+@import 'base/mixins';
+@import 'base/animation';
+
+html {
+    /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+    height: 100%;
+    /**
+      Убираем скачок интерфейса по горизонтали
+      при появлении / исчезновении скроллбара
+     */
+    scrollbar-gutter: stable;
+
+    &:has(.menu.active) {
+        overflow: hidden;
+    }
+}
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --main-color: #324769;
+  --light-color: #f5f5f7;
+  --silver-color: #bfbfbfd1;
+  --dark-color: #292929;
+  --black-color: #000000e1;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.divider {
+    margin: 25px auto 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/loader';
+@import 'blocks/footer';
+@import 'blocks/media';

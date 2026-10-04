@@ -1,0 +1,70 @@
+.promo {
+    height: 100vh;
+    position: relative;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    padding-top: 206px;
+    &__title {
+        margin-top: 5px;
+        width: 535px;
+        span {
+            color: var(--silver-color);
+            position: relative;
+            &::after {
+                content: "";
+                top: 10px;
+                left: 35px;
+                position: absolute;
+                display: block;
+                height: 40px;
+                width: 4px;
+                background-color: var(--silver-color);
+                animation: carriage 1s linear infinite;
+            }
+        }
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 245px;
+    }
+    &__link {
+        color: var(--light-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease-out;
+        &:hover {
+            letter-spacing: 1px;
+        }
+    }
+    &__contacts {
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        column-gap: 20px;
+        color: var(--silver-color);
+        font-size: 13px;
+        &-item {
+            padding-right: 40px;
+            border-right: 2px solid var(--silver-color);
+            address {
+                margin-bottom: 0;
+            }
+            &:last-child {
+                border-right: none;
+            }
+            a {
+                text-decoration: none;
+                color: var(--silver-color);
+            }
+        }
+        
+    }
+}
